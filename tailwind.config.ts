@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				temple: {
+					gold: 'hsl(var(--temple-gold))',
+					saffron: 'hsl(var(--temple-saffron))',
+					red: 'hsl(var(--temple-red))',
+					stone: 'hsl(var(--temple-stone))',
+					shadow: 'hsl(var(--temple-shadow))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +69,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			boxShadow: {
+				'temple': 'var(--shadow-temple)',
+				'peaceful': 'var(--shadow-peaceful)',
+				'sacred': 'var(--shadow-sacred)',
+			},
+			backgroundImage: {
+				'gradient-golden': 'var(--gradient-golden)',
+				'gradient-sunset': 'var(--gradient-sunset)',
+				'gradient-temple': 'var(--gradient-temple)',
+			},
+			transition: {
+				'temple': 'var(--transition-temple)',
+				'peaceful': 'var(--transition-peaceful)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -8,50 +8,69 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Temple color palette inspired by traditional Khmer Buddhist aesthetics */
+    --background: 35 25% 97%;
+    --foreground: 25 20% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 35% 98%;
+    --card-foreground: 25 20% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 35% 98%;
+    --popover-foreground: 25 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Golden saffron primary - traditional Buddhist color */
+    --primary: 38 95% 55%;
+    --primary-foreground: 25 20% 15%;
+    
+    /* Warm temple stone secondary */
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 25 20% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft temple beige muted */
+    --muted: 35 20% 92%;
+    --muted-foreground: 25 15% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Sacred lotus accent */
+    --accent: 340 85% 75%;
+    --accent-foreground: 25 20% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 85%;
+    --input: 35 15% 88%;
+    --ring: 38 95% 55%;
+
+    /* Temple-specific design tokens */
+    --temple-gold: 45 100% 50%;
+    --temple-saffron: 38 95% 55%;
+    --temple-red: 10 85% 55%;
+    --temple-stone: 35 25% 85%;
+    --temple-shadow: 25 25% 25%;
+    
+    /* Sacred gradients */
+    --gradient-golden: linear-gradient(135deg, hsl(45 100% 60%), hsl(38 95% 55%));
+    --gradient-sunset: linear-gradient(180deg, hsl(35 80% 85%), hsl(40 60% 90%));
+    --gradient-temple: linear-gradient(145deg, hsl(38 95% 55%), hsl(10 85% 65%));
+    
+    /* Spiritual shadows */
+    --shadow-temple: 0 10px 30px -10px hsl(38 95% 55% / 0.3);
+    --shadow-peaceful: 0 4px 20px -8px hsl(25 25% 25% / 0.2);
+    --shadow-sacred: 0 0 40px hsl(45 100% 60% / 0.4);
+
+    /* Smooth temple animations */
+    --transition-temple: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-peaceful: all 0.6s ease-out;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
