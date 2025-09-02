@@ -105,9 +105,15 @@ const Index = () => {
             <MapPin className="w-4 h-4" />
             <span className="text-sm text-white/80">{t.location}</span>
           </div>
-          <Button size="lg" className="bg-temple-saffron hover:bg-temple-gold text-temple-shadow">
-            {language === 'km' ? 'ស្វែងយល់បន្ថែម' : 'Explore Temple'}
-          </Button>
+<Button
+  size="lg"
+  className="bg-temple-saffron hover:bg-temple-gold text-temple-shadow"
+  asChild
+>
+  <a href="/daily-news" target="_blank" rel="noopener noreferrer">
+    {language === 'km' ? 'ស្វែងយល់បន្ថែម' : 'Explore Temple'}
+  </a>
+</Button>
         </div>
       </section>
 
