@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import templeHero from '@/assets/temple-hero.jpg';
 import dharmaWheel from '@/assets/dharma-wheel.jpg';
 import meditationGarden from '@/assets/meditation-garden.jpg';
@@ -22,7 +23,8 @@ const Index = () => {
       events: 'ព្រឹត្តិការណ៍',
       schedule: 'កាលវិភាគ',
       contact: 'ព័ត៌មានទំនាក់ទំនង',
-      donation: 'បរិច្ចាគ'
+      donation: 'បរិច្ចាគ',
+      dailyNews: 'ព័ត៌មានប្រចាំថ្ងៃ'
     },
     en: {
       title: 'Wat Siri Mongkol',
@@ -35,7 +37,8 @@ const Index = () => {
       events: 'Events & Festivals',
       schedule: 'Daily Schedule',
       contact: 'Contact Information',
-      donation: 'Donations'
+      donation: 'Donations',
+      dailyNews: 'Daily News'
     }
   };
 
@@ -55,6 +58,7 @@ const Index = () => {
             <a href="#gallery" className="text-foreground hover:text-primary transition-colors">{t.gallery}</a>
             <a href="#dharma" className="text-foreground hover:text-primary transition-colors">{t.dharma}</a>
             <a href="#events" className="text-foreground hover:text-primary transition-colors">{t.events}</a>
+            <Link to="/daily-news" className="text-foreground hover:text-primary transition-colors">{t.dailyNews}</Link>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">{t.contact}</a>
           </div>
           <div className="flex space-x-2">
